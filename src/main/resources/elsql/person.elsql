@@ -1,0 +1,11 @@
+@NAME(selectAll)
+    SELECT id, name FROM person
+
+@NAME(selectByName)
+    SELECT id, name 
+    FROM person 
+    WHERE name LIKE :pattern
+
+@NAME(insertPerson)
+    INSERT INTO person (name)
+    VALUES (:name)

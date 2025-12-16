@@ -1,0 +1,58 @@
+### Java ###
+*.class
+*.war
+*.ear
+*.jar
+
+### Logs ###
+*.log
+logs/
+*.out
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.project
+.classpath
+.settings/
+bin/
+
+### VS Code ###
+.vscode/
+
+### MacOS ###
+.DS_Store
+
+### Linux ###
+*~
+
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### H2 ###
+*.db
+*.mv.db
+*.trace.db
+
+### Spring Boot ###
+/tmp/
+hs_err_pid*
+replay_pid*
+
+### Local environment ###
+.env
+.env.*
+*.local
+
+### Logs / Temp ###
+/logs/
+/target/
