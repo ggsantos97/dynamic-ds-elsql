@@ -13,3 +13,6 @@ Endpoints:
 - POST /elsql/person?name=Nome  (header X-DS)
 - GET  /elsql/person            (header X-DS)
 - GET  /elsql/person/search?name=ParteDoNome  (header X-DS)
+- 
+  ![Arquitetura do projeto](images/arquitetura.png)
+
