@@ -22,8 +22,8 @@ public class ElSqlPersonService {
     public void create(String name) {
         log.info("Thread atual: {}", Thread.currentThread());
 
-        repository.save(new Person(name));
-       // sqlRepo.insert(name);
+       // repository.save(new Person(name));
+        sqlRepo.insert(name);
     }
 
     @Transactional(readOnly = true)

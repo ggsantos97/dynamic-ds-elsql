@@ -42,7 +42,7 @@ public class DynamicDataSourceManager {
                     .migrate();
 
 // Configurações recomendadas
-            ds.setMaximumPoolSize(50);
+            ds.setMaximumPoolSize(100);
             ds.setMinimumIdle(10);
             ds.setConnectionTimeout(30000);
             ds.setIdleTimeout(600000);
