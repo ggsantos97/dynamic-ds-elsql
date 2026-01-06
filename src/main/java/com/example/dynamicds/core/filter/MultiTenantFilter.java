@@ -28,7 +28,8 @@ public class MultiTenantFilter extends OncePerRequestFilter {
             "/v3/api-docs/**",
             "/swagger-resources/**",
             "/webjars/**",
-            "/error"
+            "/error",
+            "/h2-console/**"
     );
 
     @Override

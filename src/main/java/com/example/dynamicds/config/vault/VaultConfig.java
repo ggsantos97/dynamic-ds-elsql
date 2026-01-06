@@ -23,7 +23,9 @@ public class VaultConfig {
 
     @Bean
     public VaultEndpoint vaultEndpoint() {
-        return VaultEndpoint.create(url, port);
+        var endpoint = VaultEndpoint.create(url, port);
+        endpoint.setScheme("http");
+        return endpoint;
     }
 
     @Bean

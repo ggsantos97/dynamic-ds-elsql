@@ -1,4 +1,11 @@
 spring:
+  threads:
+    virtual:
+      enabled: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
   jpa:
     hibernate:
       ddl-auto: none
@@ -17,10 +24,10 @@ spring:
       password: ${REDIS_PASSWORD}
 
   vault:
-    url: "${VAULT_URL}
+    url:  ${VAULT_HOST}
     port: ${VAULT_PORT}
     token: ${VAULT_TOKEN}
 
 logging:
   level:
-    org.springframework: DEBUG
+    org.springframework: INFO

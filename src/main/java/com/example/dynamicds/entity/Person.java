@@ -3,7 +3,7 @@ package com.example.dynamicds.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(schema = "news", name = "person")
+@Table(name = "person")
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
